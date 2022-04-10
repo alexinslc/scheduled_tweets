@@ -6,7 +6,7 @@
 
 class User < ApplicationRecord
     has_secure_password 
-    validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP, message: "Email must be valid: john@example.com" }
+    validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP, message: "must be valid: john@example.com" }
     validates :password, presence: true, length: { minimum: 6 }
     validates :password_confirmation, presence: true
 end

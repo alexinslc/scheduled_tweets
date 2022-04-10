@@ -1,0 +1,21 @@
+<h1>Sign In</h1>
+
+<%= form_with url: sign_in_path do |form| %>
+    
+    <div class="mb-3">
+        <%= form.label :email %>
+        <%= form.text_field :email, class: "form-control", placeholder: "john@example.com"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password %>
+        <%= form.password_field :password, class: "form-control", placeholder: "P@SSW0RD" %>
+    </div>
+    <div class="mb-3">
+        <%= form.check_box :remember_me %>
+        <%= form.label :remember_me, class: "form-check-label" %>
+    </div>
+    <div class="mb-3">
+        <%= form.submit "Sign In", class: "btn btn-primary" %>
+    </div>
+<% end %>
