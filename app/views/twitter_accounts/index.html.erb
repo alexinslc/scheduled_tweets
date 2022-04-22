@@ -11,6 +11,6 @@
         <%= link_to "@#{twitter_account.username}", "https://twitter.com/#{twitter_account.username}", target: :_blank %>
       </div>
 
-      <%= button_to "Disconnect", twitter_account, method: :delete, data: { turbo_confirm: 'Are you sure?' }, class: "btn btn-danger"%>
+      <%= link_to "Disconnect", twitter_account, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-danger"%>
   </div>
 <% end %>

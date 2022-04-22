@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
 
   def destroy
     @tweet.destroy
-    redirect_to tweets_path, notice: "Tweet was unscheduled and removed"
+    redirect_to tweets_path, notice: "Tweet was unscheduled and removed", status: :see_other
   end
 
 
