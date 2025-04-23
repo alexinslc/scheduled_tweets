@@ -189,7 +189,7 @@ GEM
       date
       stringio
     public_suffix (5.0.4)
-    puma (6.4.3)
+    puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.13)
@@ -320,7 +320,7 @@ DEPENDENCIES
   jbuilder
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter (~> 1.4)
-  puma (~> 6.4)
+  puma (~> 6.6)
   rails (~> 7.2.2)
   selenium-webdriver
   sidekiq (~> 7.3)
